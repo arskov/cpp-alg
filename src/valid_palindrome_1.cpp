@@ -24,6 +24,7 @@ bool validPalindrome(string arr)
         }
         if (found)
             return found;
+        found = true;
         i = a;
         j = b;
         i++;
