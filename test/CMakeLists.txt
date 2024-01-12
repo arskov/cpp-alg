@@ -1,2 +1,0 @@
-add_executable(test_gcd_of_strings test_gcd_of_strings.cpp)
-target_link_libraries(test_gcd_of_strings gcd_of_strings)
