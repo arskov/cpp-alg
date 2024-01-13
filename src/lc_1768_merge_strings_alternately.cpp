@@ -4,7 +4,7 @@
 using namespace std;
 
 /**
- * @name Merge Strings Alternately
+ * @brief Merge Strings Alternately
  */
 class Solution
 {

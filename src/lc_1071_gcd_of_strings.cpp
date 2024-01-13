@@ -3,6 +3,9 @@
 
 using namespace std;
 
+/**
+ * @brief Greatest Common Divisor of Strings
+ */
 class Solution
 {
 public:
