@@ -8,4 +8,5 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Reverse Words in a Sentence](src/reverse_words.cpp)
 1. [Valid Palindrome](src/lc_680_valid_palindrome_2.cpp)
 1. [Merge Strings Alternately](src/lc_1768_merge_strings_alternately.cpp)
+1. [Circular Array Loop](src/lc_457_circular_array_loop.cpp)
 
