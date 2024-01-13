@@ -3,6 +3,9 @@
 
 using namespace std;
 
+/**
+ * @name Merge Strings Alternately
+ */
 class Solution
 {
 public:
