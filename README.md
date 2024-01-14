@@ -17,3 +17,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Eating Bananas](src/lc_875_eating_bananas.cpp)
 1. [Letter Combinations of a Phone Number](src/lc_17_letter_combinations_phone_number.cpp)
 1. [Combination Sum III](src/lc_216_combination_sum_3.cpp)
+1. [N-th Tribonacci Number](src/lc_1137_tribonacci_number.cpp)
