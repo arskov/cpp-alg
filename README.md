@@ -14,3 +14,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Guess Number](src/lc_375_guess_number.cpp)
 1. [Pairs of Spells and Potions](src/lc_2300_pairs_spells_and_potions.cpp)
 1. [Find Peak Element](src/lc_162_find_peak_element.cpp)
+1. [Eating Bananas](src/lc_875_eating_bananas.cpp)
