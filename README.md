@@ -10,4 +10,5 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Merge Strings Alternately](src/lc_1768_merge_strings_alternately.cpp)
 1. [Circular Array Loop](src/lc_457_circular_array_loop.cpp)
 1. [Max Subsequence Score](src/lc_2542_max_subsequence_score.cpp)
+1. [Total Cost to Hire K Workers](src/lc_2462_total_cost_hire_k_workers.cpp)
 
