@@ -12,3 +12,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Max Subsequence Score](src/lc_2542_max_subsequence_score.cpp)
 1. [Total Cost to Hire K Workers](src/lc_2462_total_cost_hire_k_workers.cpp)
 1. [Guess Number](src/lc_375_guess_number.cpp)
+1. [Pairs of Spells and Potions](src/lc_2300_pairs_spells_and_potions.cpp)
