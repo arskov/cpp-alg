@@ -53,5 +53,11 @@
         "variant": "cpp",
         "vector": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "clang-format.assumeFilename": "${workspaceFolder}/.clang-format",
+    "clang-format.style": "file",
+    "clang-format.executable": "clang-format",
+    "clang-format.fallbackStyle": "Google",
+    "clang-format.formatOnSave": true,
+    "clang-format.formatOnType": true,
 }
