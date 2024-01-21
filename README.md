@@ -24,3 +24,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Longest Common Subsequence (DP)](src/lc_1143_longest_common_subsequence_dp.cpp)
 1. [Best Time to Buy and Sell Stock with Transaction Fee (DP)](src/lc_714_buy_and_sell_tx_fee_dp.cpp)
 1. [Edit Distance (DP)](src/lc_72_edit_distance_dp.cpp)
+1. [Counting Bits](src/lc_338_counting_bits.cpp)
