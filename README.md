@@ -21,3 +21,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Min Cost Climbing Stairs](src/lc_746_min_cost_climbing_stairs.cpp)
 1. [Domino Tromino (DP)](src/lc_790_domino_tromino_dp.cpp)
 1. [Robot Unique Paths (DP)](src/lc_68_unique_paths_dp.cpp)
+1. [Longest Common Subsequence (DP)](src/lc_1143_longest_common_subsequence_dp.cpp)
