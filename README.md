@@ -27,3 +27,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Counting Bits](src/lc_338_counting_bits.cpp)
 1. [Single Number](src/lc_136_single_number_bits.cpp)
 1. [Minimum Flips to Make a OR b Equal to c](src/lc_1318_number_of_bit_flips.cpp)
+1. [Implement Trie (Prefix Tree)](src/lc_208_implement_trie.cpp)
