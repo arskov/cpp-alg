@@ -1,24 +1,21 @@
-#include <vector>
 #include <cassert>
 #include <iostream>
 #include <memory>
+#include <vector>
 
 using namespace std;
 
-class Solution
-{
-public:
-    int minCostClimbingStairs(vector<int> &cost)
-    {
+class Solution {
+   public:
+    int minCostClimbingStairs(vector<int> &cost) {
         int n = cost.size();
-        switch (n)
-        {
-        case 0:
-            return 0;
-        case 1:
-            return cost[0];
-        case 2:
-            return min(cost[0], cost[1]);
+        switch (n) {
+            case 0:
+                return 0;
+            case 1:
+                return cost[0];
+            case 2:
+                return min(cost[0], cost[1]);
         }
         unique_ptr<int[]> dp = make_unique<int[]>(n);
         dp[0] = cost[0];
@@ -30,8 +27,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
     vector<int> stairs1{1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
     int res = s.minCostClimbingStairs(stairs1);

@@ -1,8 +1,8 @@
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include <iostream>
 #include <cassert>
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 using namespace std;
 
@@ -17,31 +17,24 @@ static unordered_map<char, string> BUTTONS{
     {'9', "wxyz"},
 };
 
-class Solution
-{
-public:
-    vector<string> letterCombinations(string digits)
-    {
+class Solution {
+   public:
+    vector<string> letterCombinations(string digits) {
         vector<string> result;
         string s;
         dfs(result, s, 0, digits);
         return result;
     }
 
-private:
-    void dfs(vector<string> &res, string &current, int start, string &digits)
-    {
-        if (digits.empty())
-            return;
-        if (current.size() == digits.size())
-        {
+   private:
+    void dfs(vector<string> &res, string &current, int start, string &digits) {
+        if (digits.empty()) return;
+        if (current.size() == digits.size()) {
             res.push_back(current);
             return;
         }
-        for (int i = start; i < digits.size(); i++)
-        {
-            for (char &l : BUTTONS.at(digits[i]))
-            {
+        for (int i = start; i < digits.size(); i++) {
+            for (char &l : BUTTONS.at(digits[i])) {
                 current.push_back(l);
                 dfs(res, current, i + 1, digits);
                 current.pop_back();
@@ -50,13 +43,12 @@ private:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
     vector<string> exp{"ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"};
     auto res = s.letterCombinations("23");
     assert(res == exp);
     cout << "[";
-    for (const auto& w : res) cout << w << ",";
+    for (const auto &w : res) cout << w << ",";
     cout << "]" << endl;
 }

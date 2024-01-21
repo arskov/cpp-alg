@@ -1,17 +1,15 @@
-#include <vector>
 #include <algorithm>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 /**
  * @brief Kth Largest Element in an Array
  */
-class Solution
-{
-public:
-    int findKthLargest(vector<int> &nums, int k)
-    {
+class Solution {
+   public:
+    int findKthLargest(vector<int> &nums, int k) {
         // priority_queue<int> pq(nums.begin(), nums.end());
         // for (int i = 0; i < k - 1; i++) {
         //     pq.pop();
@@ -20,14 +18,11 @@ public:
         auto [min, max] = minmax_element(nums.begin(), nums.end());
         int size = *max - *min + 1;
         vector<int> kk(size);
-        for (int n : nums)
-            kk[n - *min]++;
+        for (int n : nums) kk[n - *min]++;
         vector<int> res(nums.size());
         int j = 0;
-        for (int i = 0; i < size; i++)
-        {
-            for (int l = 0; l < kk[i]; l++)
-            {
+        for (int i = 0; i < size; i++) {
+            for (int l = 0; l < kk[i]; l++) {
                 res[j++] = i + *min;
             }
         }
@@ -36,8 +31,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
 
     vector<int> test1{3, 2, 1, 5, 6, 4};

@@ -1,25 +1,21 @@
-#include <iostream>
 #include <cassert>
+#include <iostream>
 
 using namespace std;
 
-class Solution
-{
-public:
-    int tribonacci(int n)
-    {
-        switch (n)
-        {
-        case 0:
-            return 0;
-        case 1:
-            return 1;
-        case 2:
-            return 1;
+class Solution {
+   public:
+    int tribonacci(int n) {
+        switch (n) {
+            case 0:
+                return 0;
+            case 1:
+                return 1;
+            case 2:
+                return 1;
         }
         int a = 0, b = 1, c = 1;
-        for (int i = 3; i <= n; i++)
-        {
+        for (int i = 3; i <= n; i++) {
             int sum = a + b + c;
             a = b;
             b = c;
@@ -29,8 +25,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
     int res = s.tribonacci(4);
     assert(4 == res);

@@ -1,31 +1,24 @@
+#include <algorithm>
+#include <cassert>
+#include <iostream>
+#include <set>
 #include <string>
 #include <vector>
-#include <algorithm>
-#include <set>
-#include <iostream>
-#include <cassert>
 
 using namespace std;
 
-class Solution
-{
-public:
-    long long maxScore(vector<int> &nums1, vector<int> &nums2, int k)
-    {
-        auto cmp = [](pair<int, int> const &a, pair<int, int> const &b)
-        {
-            return a.second > b.second;
-        };
+class Solution {
+   public:
+    long long maxScore(vector<int> &nums1, vector<int> &nums2, int k) {
+        auto cmp = [](pair<int, int> const &a, pair<int, int> const &b) { return a.second > b.second; };
         vector<pair<int, int>> sorted_nums;
-        for (int i = 0; i < nums1.size(); i++)
-        {
+        for (int i = 0; i < nums1.size(); i++) {
             sorted_nums.push_back(make_pair(nums1[i], nums2[i]));
         }
         sort(sorted_nums.begin(), sorted_nums.end(), cmp);
         vector<int> hp;
         long long top_k_sum{0};
-        for (int i = 0; i < k; i++)
-        {
+        for (int i = 0; i < k; i++) {
             auto elem = sorted_nums[i];
             top_k_sum += elem.first;
             hp.push_back(elem.first);
@@ -33,8 +26,7 @@ public:
         auto hp_cmp = greater<int>();
         make_heap(hp.begin(), hp.end(), hp_cmp);
         long long ans = top_k_sum * sorted_nums[k - 1].second;
-        for (int i = k; i < nums1.size(); i++)
-        {
+        for (int i = k; i < nums1.size(); i++) {
             pop_heap(hp.begin(), hp.end(), hp_cmp);
             int hp_min = hp.back();
             hp.pop_back();
@@ -49,8 +41,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
 
     vector<int> nums1{1, 3, 3, 2};

@@ -1,21 +1,18 @@
-#include <string>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 /**
  * @brief Merge Strings Alternately
  */
-class Solution
-{
-public:
-    string mergeAlternately(string word1, string word2)
-    {
+class Solution {
+   public:
+    string mergeAlternately(string word1, string word2) {
         string result;
         int small_size = min(word1.length(), word2.length());
         int large_size = max(word1.length(), word2.length());
-        for (int i = 0; i < small_size; i++)
-        {
+        for (int i = 0; i < small_size; i++) {
             result += word1[i];
             result += word2[i];
         }
@@ -25,8 +22,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
 
     string a{"ab"};

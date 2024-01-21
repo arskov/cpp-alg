@@ -5,31 +5,24 @@ using namespace std;
 /**
  * @brief Happy Number (repeated sum of the squares of its digits eventually converges to 1)
  */
-class Solution
-{
-public:
-    bool isHappy(int n)
-    {
+class Solution {
+   public:
+    bool isHappy(int n) {
         int slow = sumOfSquares(n);
         int fast = sumOfSquares(sumOfSquares(n));
-        while (true)
-        {
-            if (fast == 1)
-                return true;
-            if (slow == fast)
-                return false;
+        while (true) {
+            if (fast == 1) return true;
+            if (slow == fast) return false;
             slow = sumOfSquares(slow);
             fast = sumOfSquares(sumOfSquares(fast));
         }
         return false;
     }
 
-private:
-    int sumOfSquares(int n)
-    {
+   private:
+    int sumOfSquares(int n) {
         int sum{0};
-        while (n > 0)
-        {
+        while (n > 0) {
             sum += (n % 10) * (n % 10);
             n = n / 10;
         }
@@ -37,8 +30,7 @@ private:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
     cout << "1 is happy -> " << s.isHappy(1) << endl;
     cout << "2 is happy -> " << s.isHappy(2) << endl;
