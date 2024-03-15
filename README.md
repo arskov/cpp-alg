@@ -29,3 +29,4 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Minimum Flips to Make a OR b Equal to c](src/lc_1318_number_of_bit_flips.cpp)
 1. [Implement Trie (Prefix Tree)](src/lc_208_implement_trie.cpp)
 1. [Max Consecutive Ones III](src/lc_1004_max_constcutive_ones_3.cpp)
+1. [Is Subsequence](src/lc_392_is_subsequence_3.cpp)
