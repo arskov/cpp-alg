@@ -18,6 +18,7 @@ Compile a single file directly, e.g.:
 - Keep solutions self-contained per file.
 - Use standard headers only.
 - Tests in `main()` should be minimal and runnable.
+- Format files with `clang-format -style=llvm -i <file>`.
 
 ## New Files
 When adding a solution:
