@@ -34,6 +34,7 @@ The repository is dedicated to providing solutions for a wide array of coding ch
 1. [Max Consecutive Ones III](src/lc_1004_max_consecutive_ones_3.cpp)
 1. [Is Subsequence](src/lc_392_is_subsequence_3.cpp)
 1. [Two Sum (find indices of two numbers that add up to a target)](src/lc_1_two_sum.cpp)
+1. [3Sum (return unique triplets that sum to zero)](src/lc_15_3sum.cpp)
 1. [Group Anagrams (group strings that are anagrams of each other)](src/lc_49_group_anagrams.cpp)
 1. [Best Time to Buy and Sell Stock (maximize profit with one buy/sell)](src/lc_121_by_and_sell_stock_1.cpp)
 1. [Contains Duplicate (return true if any value appears at least twice)](src/lc_217_contains_duplicate.cpp)
